@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Your existing CSS */
+
+        /* Add this to style your "Order Now" section to be distinct */
+        #order-now-section {
+            margin-top: 50px;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#order-now-section" onclick="toggleMenu()">Order Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+            <ul class="icon-container">
+                <li>
+                <li class="icon-circle">
+                    <i class="fas fa-phone"></i>
+                </li>
+                <li class="icon-circle">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="center-card">
+            <div class="center-content">
+                <h1 class="center-heading">LOREM IPSUM</h1>
+                <p class="center-passage">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="order-now-section" class="gradient-background">
+        <h1 class="gradient-hea">Order Now</h1>
+        <div class="card-wrap-container">
+            <div class="cards-container">
+                <img class="container-img" src="https://res.cloudinary.com/dgodtmq70/image/upload/v1721870841/img4_gkaisp.jpg" alt="burger" />
+                <h1 class="container-heading">Burger</h1>
+                <p class="container-content">Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="cards-container">
+                <img class="container-img" src="https://res.cloudinary.com/dgodtmq70/image/upload/v1721870818/img2_prpbyf.jpg" alt="burger" />
+                <h1 class="container-heading">Pizza</h1>
+                <p class="container-content">Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="cards-container">
+                <img class="container-img" src="https://res.cloudinary.com/dgodtmq70/image/upload/t_pasta/v1721870862/img3_p6g89j.jpg" alt="burger" />
+                <h1 class="container-heading">Pasta</h1>
+                <p class="container-content">Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+        <button class="order-button">Order</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('nav-menu-visible');
+        }
+    </script>
+</body>
+
+</html>
